@@ -1,26 +1,30 @@
-package it.unical.tests;
+package it.unical.t;
 
-import static org.junit.jupiter.api.Assert.assertTrue;
+
 import java.util.Arrays;
 import java.util.Collection;
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.runner.RunWith;
-import org.junit.jupiter.api.runners.Parameterized;
-import org.junit.jupiter.api.runners.Parameterized.Parameters;
-
-import it.unical.calculator.*;
+import it.unical.calculator.Division;
+import it.unical.calculator.Sum;
+import it.unical.calculator.Subtraction;
+import it.unical.calculator.Multiply;
+import it.unical.calculator.Operation;
 
 @RunWith(value=Parameterized.class)
-class Parametric {
+public class testParametric {
 
 	private int number;
 	
-	public Parametric(int number) {
+	public testParametric(int number) {
 		this.number=number;
 	}
 	
-	@ParameterizedTest
+	@Parameters
 	public static Collection data() {
 		Object[][] data=new Object[][] {{5},{10}, {20}, {40}};
 		return Arrays.asList(data);

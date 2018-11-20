@@ -1,11 +1,15 @@
-package it.unical.tests;
-import static org.junit.jupiter.api.Assert.assertEquals;
-import static org.junit.jupiter.api.Assert.assertFalse;
-import static org.junit.jupiter.api.Assert.assertTrue;
-import org.junit.jupiter.api.Test;
-import it.unical.calculator.*;
+package it.unical.t;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+import org.junit.Test;
+import it.unical.calculator.Division;
+import it.unical.calculator.Sum;
+import it.unical.calculator.Subtraction;
+import it.unical.calculator.Multiply;
+import it.unical.calculator.Operation;
 
-class TestCalcultor {
+public class testCalcultor {
 
 	@Test
 	public void sum(){				

@@ -1,22 +1,25 @@
-package it.unical.tests;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import static org.junit.jupiter.api.Assert.assertEquals;
-
-import static org.junit.jupiter.api.After;
-import static org.junit.jupiter.api.Before;
-import static org.junit.jupiter.api.BeforeClass;
-import org.junit.jupiter.api.Test;
+package it.unical.t;
 
 
-import it.unical.calculator.*;
+import static org.junit.Assert.assertEquals;
 
-class Generic {
+import  org.junit.After;
+import  org.junit.Before;
+import  org.junit.BeforeClass;
+import org.junit.Test;
+
+
+import it.unical.calculator.Division;
+import it.unical.calculator.Sum;
+import it.unical.calculator.Subtraction;
+import it.unical.calculator.Multiply;
+import it.unical.calculator.Operation;
+
+public class testGeneric {
 	int i;
 	int j;
 	
-	@BeforeEach
+	@Before
 	public void initializeTestCases() {
 		Multiply molt=new Multiply(5,6);
 		i=molt.execute();
@@ -48,7 +51,7 @@ class Generic {
 		div.execute();
 	}
 	
-	@AfterEach
+	@After
 	public void finalize() {
 		i=0;
 		j=0;
