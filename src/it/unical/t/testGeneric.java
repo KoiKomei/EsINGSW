@@ -47,7 +47,7 @@ public class testGeneric {
 	
 	@Test(expected=ArithmeticException.class)
 	public void divisionByZero() {
-		Division div= new Division(j,2);
+		Division div= new Division(j,0);
 		div.execute();
 	}
 	
